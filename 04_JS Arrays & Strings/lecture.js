@@ -101,5 +101,56 @@ let k = arraySeven.filter((num) => num > 3); // empty []
 console.log(j);
 console.log(k);
 
+//Manipulating Strings
+//Concatenating
+
+// index.of() // lastIndexOf()
+let str = "I am JavaScript developer";
+console.log(str.indexOf("Java")); // 5
+console.log(str.indexOf("java")); // -1
+console.log(str.lastIndexOf("e")); // 23
+
+// substring()
+console.log(str.substring(5, 9)); // Java
+
+// replace()
+let emails = "abv@email.com vba@email.com";
+console.log(emails.replace(".com", ".bg"));// заменя само първата открита част
+
+// split()
+let fruits = "I love fruits";
+let words = fruits.split(' ');
+console.log(words);
+
+// includes()
+console.log(fruits.includes("love")); // true
+console.log(fruits.includes("no")); // false
+
+// repeat()
+
+console.log('*'.repeat(10));
+
+// trim(); // trimStart() // trimEnd()
+let trim = "      I am the Rock    ";
+console.log(trim.trim());
+
+// startsWith() / endsWith()
+let start = "I em the Rock";
+console.log(start.startsWith("I"));
+console.log(start.endsWith("y"));
+
+// padStart() / padEnd()
+let pad = "010";
+console.log(pad.padStart(8, "0")); // 00000010
+console.log(pad.padEnd(8, "0")); // 01000000
+
+// RegExp - реглярни изрази
+const regLiteral = /[A-Za-z]+/g
+const regExp = new RegExp('[A-Za-z]+', 'g');
+
+
+
+
+
 
 
