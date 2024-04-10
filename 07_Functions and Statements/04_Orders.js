@@ -1,15 +1,15 @@
 function calculatePrice(product, quantity) {
 
-    const products = {
-        coffee: (quantity) => quantity * 1.5,
-        water: (quantity) => quantity * 1.00,
-        coke: (quantity) => quantity * 1.40,
-        snacks: (quantity) => quantity * 2.00,
+    const productPrices = {
+        coffee:  1.5,
+        water:  1.00,
+        coke:  1.40,
+        snacks:  2.00,
     }
 
-    const operatorFunction = products[product];
-    const result = operatorFunction(quantity);
-    console.log(result.toFixed(2));
+    const productPrice = productPrices[product];
+    const orderPrice = productPrice * quantity;
+    console.log(orderPrice.toFixed(2));
 
     // console.log((products[product](quantity)).toFixed(2));
 }
