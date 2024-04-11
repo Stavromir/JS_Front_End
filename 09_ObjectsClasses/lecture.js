@@ -25,3 +25,27 @@ let jsonObject = '{"firstName":"Stavri","lastName":"Kasapov"} ';
 console.log(JSON.parse(jsonObject)); // { firstName: 'Stavri', lastName: 'Kasapov' } - JS object
 
 
+// Classes
+
+class Student {
+    constructor(name, grade) {
+        this.firstName = name;
+        this.grade = grade;
+    }
+
+    //method (function)
+    study() {
+        this.grade++;
+        console.log('Good job!')
+    }
+}
+
+let firstStudent = new Student("Ivane", 3);
+
+console.log(firstStudent);
+
+firstStudent.study();
+
+
+
+

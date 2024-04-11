@@ -19,5 +19,5 @@ function manageMeetings(array) {
 manageMeetings(['Monday Peter',
     'Wednesday Bill',
     'Monday Tim',
-    'Friday Tim']
-);
+    'Friday Tim'
+]);
