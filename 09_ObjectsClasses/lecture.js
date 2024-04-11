@@ -13,3 +13,15 @@ console.log(test);
 console.log(Object.keys(test));
 console.log(Object.values(test));
 console.log(Object.entries(test)); // двойки от ключове и стойности
+
+// JSON
+
+// From JS to JSON
+
+console.log(JSON.stringify(test)); // {"firstName":"Stavri","lastName":"Kasapov"} JSON object
+
+let jsonObject = '{"firstName":"Stavri","lastName":"Kasapov"} ';
+
+console.log(JSON.parse(jsonObject)); // { firstName: 'Stavri', lastName: 'Kasapov' } - JS object
+
+
