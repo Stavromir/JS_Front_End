@@ -1,9 +1,9 @@
-function storeProvision(firstArray, secondArray) {
+function storeProvision(currentStock, orderedProducts) {
 
     let products = {};
 
-    readProducts(firstArray);
-    readProducts(secondArray);
+    readProducts(currentStock);
+    readProducts(orderedProducts);
 
     function readProducts(array) {
 
