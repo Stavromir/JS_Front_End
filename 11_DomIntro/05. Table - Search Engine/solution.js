@@ -12,8 +12,6 @@ function solve() {
         for (const tr of itemsList) {
            tr.className = "";
 
-           console.log(tr.innerHTML);
-
             if (tr.innerHTML.includes(searchInput) && searchInput.length !== 0) {
                 tr.className = "select";
             }
