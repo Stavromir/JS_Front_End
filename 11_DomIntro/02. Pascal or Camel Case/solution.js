@@ -1,7 +1,7 @@
 function solve() {
 
     const inputText = document
-        .getElementById('text').value;
+        .getElementById('text').value.toLowerCase();
     const conventionType = document
         .getElementById('naming-convention').value;
 
@@ -13,7 +13,7 @@ function solve() {
 
         for (let i = 0; i < wordsInText.length; i++) {
 
-            let currentWord = wordsInText[i].toLowerCase();
+            let currentWord = wordsInText[i];
 
             if (i > 0) {
                 let firstLetter = currentWord.substring(0, 1);
@@ -27,7 +27,7 @@ function solve() {
 
         for (let i = 0; i < wordsInText.length; i++) {
 
-            let currentWord = wordsInText[i].toLowerCase();
+            let currentWord = wordsInText[i];
 
             let firstLetter = currentWord.substring(0, 1);
             currentWord = currentWord.replace(firstLetter, firstLetter.toUpperCase());
